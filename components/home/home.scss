@@ -1,0 +1,83 @@
+@import "../../css-config/mixins.scss";
+html {
+    scroll-behavior: smooth;
+  }
+.Home{
+background-color: #0a192f;
+width: 100%;
+@include md {
+    padding-top: 100px;
+}
+.Title-and-desc{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    flex-direction: column;
+    color: #64ffda;
+
+    @include md {
+        padding-left: 20%;
+    }
+    .sub-title{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .Title{
+        font-size: 44px;
+        font-weight: 500;
+        color: white;
+        margin: 5px 0;
+        @include md {
+            font-size: 60px;
+        }
+    }
+    .desc{
+        font-size: 16px;
+        font-weight: 200;
+        color: rgba($color: white, $alpha: 0.6);
+        @include md {
+            width: 200px;
+            
+            
+        }
+    }
+    .email{
+        margin: 10px 0;
+        a{
+            text-decoration: none;
+            color: #64ffda;
+        }
+    }
+}
+.Image{
+    display: flex;
+    justify-content: center;
+    .img{
+       
+        bottom: 0;
+        width: 100%;
+        
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
+        @include md {
+            margin-top: -10%;
+            width: 40%;
+        }
+    }
+    
+    
+}
+}
+
+.hidden{
+    opacity: 1;
+    transition: all ease-in 1s;
+}
+
+.show{
+    opacity: 0;
+}
